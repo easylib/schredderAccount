@@ -14,7 +14,7 @@
     ],
     "require": {
         "php": ">=5.3.3",
-        "Easy/Curl":"dev-master"
+        "Easylib/Curl":"dev-master"
     },
     "autoload": {
         "psr-0": {
