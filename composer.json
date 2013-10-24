@@ -1,5 +1,5 @@
 {
-    "name": "Easylib/PDOW",
+    "name": "Easylib/schredderAccount",
     "type": "library",
     "version": "v2.0",
     "authors": [
@@ -9,11 +9,12 @@
         }
     ],
     "require": {
-        "php": ">=5.3.3"
+        "php": ">=5.3.3",
+        "Easy/Curl"
     },
     "autoload": {
         "psr-0": {
-            "Easy\\PDOW\\": ""
+            "Easy\\schredderAccount\\": ""
         }
     }
 }
