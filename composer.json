@@ -9,9 +9,6 @@
             "email": "kruemel@schredder.pw"
         }
     ],
-    "repositories": [
-        { "type": "vcs", "url": "http://github.com/easylib/Curl" }
-    ],
     "require": {
         "php": ">=5.3.3",
         "Easylib/Curl":"dev-master"
