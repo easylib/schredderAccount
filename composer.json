@@ -1,4 +1,5 @@
 {
+
     "name": "Easylib/schredderAccount",
     "type": "library",
     "version": "v2.0",
@@ -8,9 +9,12 @@
             "email": "kruemel@schredder.pw"
         }
     ],
+    "repositories": [
+        { "type": "vcs", "url": "http://github.com/easylib/Curl" }
+    ],
     "require": {
         "php": ">=5.3.3",
-        "Easy/Curl"
+        "Easy/Curl":"dev-master"
     },
     "autoload": {
         "psr-0": {
