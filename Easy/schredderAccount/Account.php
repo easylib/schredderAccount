@@ -47,7 +47,7 @@ class Account
 	public function isLogin()
 	{
 		$r = $this->c->get("http://account.schredder.pw/api/user/login/");
-		var_dump($r);
+		#var_dump($r);
 		#$r = file_get_contents("http://account.schredder.pw/api/loginSession?key=".base64_encode($this->loginSession));
         $d = json_decode($r, true);
         if(isset($d["status"])&&$d["status"]==false)
