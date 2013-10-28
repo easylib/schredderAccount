@@ -64,7 +64,7 @@ class Account
 			$userID==$this->id;
 		}
 		$r = $this->c->get("http://account.schredder.pw/api/user/userRights/?userID=".$userID."&right=".$right);
-		return $r[$right];
+		return (bool)$r[$right];
 	}
 	/*public function test()
 	{
