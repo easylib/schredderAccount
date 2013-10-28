@@ -50,7 +50,7 @@ class Account
 		var_dump($r);
 		#$r = file_get_contents("http://account.schredder.pw/api/loginSession?key=".base64_encode($this->loginSession));
         $d = json_decode($r, true);
-        if($d["status"]==false)
+        if(isset($d["status"])&&$d["status"]==false)
         {
         	return false;
         }
