@@ -55,7 +55,11 @@ class Account
         	return false;
         }
         $this->id = $d["id"];
-        return $d["login"];
+        if($d["login"]==true)
+        {
+        	return true;
+        }
+        return false;
 	}
 	public function checkRight($right, $userID=NULL)
 	{
