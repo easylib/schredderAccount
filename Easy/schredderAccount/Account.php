@@ -55,7 +55,7 @@ class Account
         	return false;
         }
         $this->id = $d["id"];
-        if($d["login"]==true)
+        if($d["login"]=="true")
         {
         	return true;
         }
