@@ -68,8 +68,22 @@ class Account
 			$userID==$this->id;
 		}
 		$r = $this->c->get("http://account.schredder.pw/api/user/userRights/?userID=".$userID."&right=".$right);
-		return (bool)$r[$right];
+		$d = json_decode($r, true);
+		return (bool)$d[$right];
 	}
+	public function getUserDetaisByMail($mail)
+	{
+		$r = $this->c->get("http://account.schredder.pw/api/user/detaisByMail?mail=".$mail);
+		$d = json_decode($r, true);
+		return $d;
+	}
+		public function getUserDetaisById($id)
+	{
+		$r = $this->c->get("http://account.schredder.pw/api/user/detaisById?id=".$id);
+		$d = json_decode($r, true);
+		return $d;
+	}
+
 	/*public function test()
 	{
 		return $this->c->get("http://account.schredder.pw/api/app/testSession");
