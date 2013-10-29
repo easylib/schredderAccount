@@ -61,6 +61,10 @@ class Account
         }
         return false;
 	}
+	public function getID()
+	{
+		return $this->id;
+	}
 	public function checkRight($right, $userID=NULL)
 	{
 		if($userID==NULL)
